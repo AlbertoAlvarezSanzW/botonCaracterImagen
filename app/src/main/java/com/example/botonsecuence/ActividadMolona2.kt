@@ -19,5 +19,10 @@ class ActividadMolona2 : AppCompatActivity() {
         diablo?.let {
             texto.text = diablo.toString()
         }
+
+        val diablo2 = intent.getStringExtra(EP1)
+        diablo2 ?.let {
+            texto.text = diablo2.toString().toUpperCase()
+        }
     }
 }

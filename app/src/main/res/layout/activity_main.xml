@@ -12,16 +12,20 @@
         android:id="@+id/boton1"
         android:layout_width="262dp"
         android:layout_height="66dp"
+        android:text="Boton 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         tools:ignore="InvalidId,MissingConstraints">
 
     </Button>
 
     <Button
         android:id="@+id/boton2"
+        android:text="Boton 2"
         android:layout_width="262dp"
         android:layout_height="66dp"
         app:layout_constraintBottom_toTopOf="@+id/boton1"
@@ -43,6 +47,7 @@
 
     <Button
         android:id="@+id/boton3"
+        android:text="Boton 3"
         android:layout_width="262dp"
         android:layout_height="66dp"
         app:layout_constraintBottom_toBottomOf="parent"

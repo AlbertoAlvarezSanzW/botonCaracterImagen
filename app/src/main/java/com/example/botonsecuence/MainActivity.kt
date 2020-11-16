@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     companion object{const val EP1="variableEstatica"}
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         boton1.setOnClickListener {
             //Explicación de hoy
             val intent = Intent(this,ActividadMolona::class.java)
+            intent.putExtra(EP1,1)
             startActivity(intent)
         }
 
@@ -43,6 +45,27 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        val boton3 =  findViewById<Button>(R.id.boton3)
+        boton3.setOnClickListener {
+            val random = Random.nextInt(1,10) // me lo ha pasado javi xd
+            if (random > 4){
+
+                val intent = Intent(this, ActividadMolona::class.java)
+                intent.putExtra(EP1,random)
+                startActivity(intent)
+
+            }else{
+                val intent = Intent(this, ActividadMolona2::class.java)
+                intent.putExtra(EP1,EditText.text.toString())
+                startActivity(intent)
+            }
+
+
+
+
+
+
+        }
 
 
 
