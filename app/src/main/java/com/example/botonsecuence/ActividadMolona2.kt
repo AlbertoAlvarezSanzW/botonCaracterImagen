@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import com.example.botonsecuence.MainActivity.Companion.EP1
+import java.util.*
 
 class ActividadMolona2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,7 @@ class ActividadMolona2 : AppCompatActivity() {
 
         val diablo2 = intent.getStringExtra(EP1)
         diablo2 ?.let {
-            texto.text = diablo2.toString().toUpperCase()
+            texto.text = diablo2.toString().toUpperCase(Locale.ROOT)
         }
     }
 }

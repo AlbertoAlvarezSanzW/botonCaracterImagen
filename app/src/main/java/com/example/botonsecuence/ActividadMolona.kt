@@ -11,6 +11,7 @@ class ActividadMolona : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actividad_molona)
         val number = 0
+        // crear la constante
         val ViewImagen = findViewById<ImageView>(R.id.imageView5)
         val image = intent.getIntExtra(EP1,number)
         image?.let {
